@@ -24,7 +24,7 @@ double calculate(double a, int n)
         return (1.0/sqrt(2*M_PI))*integrate(0, x, n, f) - a;
     };
 
-    double res = bisection(0, 1, F);
+    double res = bisection(0, 10, F);
 
     return res;
 }

@@ -30,7 +30,7 @@ Func legendrePolynom(int n)
             coef[i] = -coef[i];
     }
 
-    Func f = [coef, n](double x)
+    Func f = [coef = std::move(coef), n](double x)
     {
         double res = 0;
         for (int i = 0; i < n/2 + 1; i++)
